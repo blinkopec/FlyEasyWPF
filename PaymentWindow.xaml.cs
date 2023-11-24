@@ -61,5 +61,71 @@ namespace integrationWPF
                 DateBox.SelectionStart = DateBox.Text.Length;
             }
         }
+
+        private void TextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            if (!char.IsDigit(e.Text, 0))
+                e.Handled = true;
+
+
+            if (numberCardBox.Text.Length == 4)
+            {
+                numberCardBox.Text += " ";
+            }
+            if (numberCardBox.Text.Length == 9)
+            {
+                numberCardBox.Text += " ";
+            }
+            if (numberCardBox.Text.Length == 14)
+            {
+                numberCardBox.Text += " ";
+            }
+            if (numberCardBox.Text.Length == 19)
+            {
+                numberCardBox.Text += " ";
+            }
+
+            numberCardBox.SelectionStart = numberCardBox.Text.Length;
+        }
+
+        private void NameBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            if (!char.IsLetter(e.Text, 0))
+                e.Handled = true;
+        }
+
+        private void CVCBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            if (!char.IsDigit(e.Text, 0))
+                e.Handled = true;
+        }
+
+        private void DateBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            if (!char.IsDigit(e.Text, 0))
+                e.Handled = true;
+        }
+
+        private void TextBox_TextInput(object sender, TextCompositionEventArgs e)
+        {
+            if (numberCardBox.Text.Length == 4)
+            {
+                numberCardBox.Text += " ";
+            }
+            if (numberCardBox.Text.Length == 9)
+            {
+                numberCardBox.Text += " ";
+            }
+            if (numberCardBox.Text.Length == 14)
+            {
+                numberCardBox.Text += " ";
+            }
+            if (numberCardBox.Text.Length == 19)
+            {
+                numberCardBox.Text += " ";
+            }
+
+            numberCardBox.SelectionStart = numberCardBox.Text.Length;   
+        }
     }
 }

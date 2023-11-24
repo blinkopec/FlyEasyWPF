@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\projects\integrationWPF\1\integrationWPF\obj\Debug\
+C:\Users\viplo\projects\FlyEasyWPF\obj\Debug\
 integrationWPF
 none
 false
 DEBUG;TRACE
-D:\projects\integrationWPF\1\integrationWPF\App.xaml
+C:\Users\viplo\projects\FlyEasyWPF\App.xaml
 9-1354195238
 2-1957146511
 252092445066
-18-632690025
+181883499411
 AdminMainWindow.xaml;EditPasswordWindow.xaml;EditProfileWindow.xaml;LoginWindow.xaml;MainWindow.xaml;PaymentWindow.xaml;RegestrationWindow.xaml;RoutesWindow.xaml;UserWindow.xaml;
 
 False

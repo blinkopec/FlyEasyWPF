@@ -101,10 +101,10 @@
                 </Grid.RowDefinitions>
 
                 <Image Grid.Column="0" Grid.Row="0" Source="Resources/pin.png" Width="50" Height="50"/>
-                <TextBox  MaxLength="16" Grid.Row="1" Background="ForestGreen" Grid.ColumnSpan="2" Height="40" Width="300" FontSize="16" Margin="57,5,193,5"/>
-                <TextBox TextChanged="DateBox_TextChanged" MaxLength="5" Height="40" Width="60" Background="ForestGreen" x:Name="DateBox" Grid.Column="0" Grid.Row="2"  FontSize="16"/>
-                <TextBox   Height="40" Width="160" Background="ForestGreen" FontSize="16" x:Name="NameBox"  Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left"/>
-                <PasswordBox MaxLength="3" x:Name="CVCBox" Width="60" Height="40" FontSize="16" Background="ForestGreen" Grid.Row="2" Grid.Column="1"/>
+                <TextBox x:Name="numberCardBox"  MaxLength="19" TextInput="TextBox_TextInput" PreviewTextInput="TextBox_PreviewTextInput" Grid.Row="1" Background="ForestGreen" Grid.ColumnSpan="2" Height="40" Width="300" FontSize="16" Margin="57,5,193,5"/>
+                <TextBox PreviewTextInput="DateBox_PreviewTextInput" TextChanged="DateBox_TextChanged" MaxLength="5" Height="40" Width="60" Background="ForestGreen" x:Name="DateBox" Grid.Column="0" Grid.Row="2"  FontSize="16"/>
+                <TextBox  PreviewTextInput="NameBox_PreviewTextInput" Height="40" Width="160" Background="ForestGreen" FontSize="16" x:Name="NameBox"  Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left"/>
+                <PasswordBox MaxLength="3" PreviewTextInput="CVCBox_PreviewTextInput" x:Name="CVCBox" Width="60" Height="40" FontSize="16" Background="ForestGreen" Grid.Row="2" Grid.Column="1"/>
             </Grid>
         </Border>
 
